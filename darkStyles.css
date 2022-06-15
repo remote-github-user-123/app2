@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    background: black;
+    color: white;
+}
+
+#editor{
+    float:left;
+    width:50%;
+    height: 90vh;
+    border: 1.5px solid rgb(226, 224, 224);
+}
+#output{
+    float:left;
+    width:50%;
+    height: 90vh;
+    border: 1.5px solid rgb(210, 207, 207);
+    padding: 0.3%;
+    overflow: scroll;
+
+}
+
+textarea{
+    height: 90vh;
+    width: 99%;
+    background: #08525e7d;
+    color : white;
+    resize: none;
+    outline: none;
+    font-family: Consolas,monaco,monospace;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+}   
+
+#canvas{
+    margin: 0;
+    width: 98%;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.hidden{
+    display:none;
+    /* visibility: hidden; */
+}
+
+#buttons{
+    width: 100%;
+    height: fit-content;
+    background: #0d1721;
+    margin-bottom: 1vh;
+    padding: 1em;
+    box-sizing: border-box;
+
+
+}
+
+.btn{
+    background: #04AA6D;
+    color: black;
+    border: none;
+    border-radius: 2vmax;
+    color: white;
+    font-weight: bold;
+    /* padding: 1em; */
+    width: 8vw;
+    height: 4vh;
+    margin: 0 2vw;
+    font-size: 1vmax;
+}
+
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.active{
+    background: #01754b;
+    color: white;
+
+}
+
+
+#mode{
+    background: none;
+    border:none;
+    color: white;
+    filter: invert(1);
+    float: right;
+}
+
+
+#appname{
+    font-family:cursive ;
+    font-size: 1.6vmax;
+    color: white;
+
+}
+
+@media(max-width:700px){
+    #main{
+        /* background: yellow; */
+        width: 98%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #editor{
+        margin: 2%;
+        width: 96%;
+    }
+
+    #output{
+        margin: 2%;
+        width: 96%;;
+    }
+    
+}

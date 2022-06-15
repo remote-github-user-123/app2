@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weblite - An online code editor for HTML, CSS and JS that runs completely on the browser</title>
+    <meta name="description" content="Weblite provides an interface for editing HTML, CSS and JS on the web seamlessly without having to make any network calls. It runs completely on the web and provides a very smooth experience. Try it out today!!">
+    <link rel="stylesheet" href="brightStyles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="buttons">
+        <h3 style="display: inline" id="appname">Weblite</h3>
+        <button class="btn active" id="bhtml" data-editor="0">HTML</button>
+        <button class="btn" id="bcss" data-editor="1">CSS</button>
+        <button class="btn" id="bjs" data-editor="2">JS</button>
+        <a href="fullscreen.html" style="color: cyan; background: #80808067; font-size: 1vmax; padding: 0.8vmax; text-decoration: auto; border-radius: 1vmax;" target="_blank" id="fullscreen">Fullscreen</a>
+        <!-- <button type="button" id="compile">Compile</button> -->
+        <button type="button" id="mode"><img src="brightness.png"/></button>
+    </div>
+    <section id="canvas">
+            <div id="main">
+                <div id="editor">
+                    <textarea id="inputh" spellcheck="false"></textarea>
+                    <textarea id="inputc" class="hidden" spellcheck="false"></textarea>
+                    <textarea id="inputj" class="hidden" spellcheck="false"></textarea>
+            
+                </div>
+                <div id="output"></div>
+            </div>
+    </section>
+    <!-- <script id="scr"></script> -->
+
+    <script src="./JS/script.js"></script>
+    
+</body>
+</html>

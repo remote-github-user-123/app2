@@ -1,0 +1,35 @@
+#signup{
+	position: fixed;
+	padding: 50px;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -175px;
+	align-content: center;
+	border-radius: 25px;
+	background-color: rgb(243, 243, 243);
+}
+
+h3{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+
+#submit{
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: rgb(9, 58, 58);
+	color: aliceblue;
+	border-radius: 25px;
+}
+
+body{
+	background-color: rgb(204, 204, 204);
+}
+
+p{
+	color: rgb(255, 107, 107);
+	font-size: small;
+}
